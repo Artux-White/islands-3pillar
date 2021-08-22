@@ -1,0 +1,28 @@
+.grid-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.cell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  grid-template-rows: repeat(30px)
+}
+
+.blue{
+  background-color: aqua;
+}
+
+.brown{
+  background-color: burlywood;
+}
+
+

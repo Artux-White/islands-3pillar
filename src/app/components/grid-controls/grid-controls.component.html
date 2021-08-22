@@ -1,0 +1,11 @@
+<div class="controls">
+  <mat-form-field appearance="fill">
+    <mat-label>Rows</mat-label>
+    <input matInput [(ngModel)]="rows" type="number" min="1" max="18">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Columns</mat-label>
+    <input matInput [(ngModel)]="cols" type="number" min="1" max="40">
+  </mat-form-field>
+  <button mat-raised-button color="primary" [disabled]="rows < 1 || cols < 1" (click)="createMatrix()">Generate</button>
+</div>
